@@ -33,4 +33,4 @@ numbers.clear() # удаляет весь список
 print(numbers)
 
 print(numbers.count(True)) # .count() считает сколько таких элементов или значений есть в списке
-print(len(numbers)) # показывает длинну всего списка
+print(len(numbers)) # показывает длину всего списка
