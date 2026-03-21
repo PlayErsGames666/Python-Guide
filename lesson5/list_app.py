@@ -4,14 +4,20 @@
 #     el *= 2
 #     print(el)
 
+
+# Создаёт алгоритм который может на основе ваших запросов создавать
+# лист, тоесть таблицу данных. Которую можно изменять по своему усмотрению.
+
+
 n = int(input("Enter length: "))
 user_list = []
 
 i = 0
-while i < n:
-    string = "Enter element: #" + str(i + 1) + ":"
-    user_list.append(input(string))
-    i += 1
-    user_list.sort()
+while i < n: # Пока n больше 0
+    string = "Enter element: #" + str(i + 1) + ": " # Выводит число после текста Enter length:
+                                                    # который увеличивает число в зависимости от изначачального запросы длины
+    user_list.append(input(string)) # Добавляет элемент в конец списка
+    i += 1 # добавляет по +1 каждой строки на основе заданной n
+    user_list.sort() # Сортирует созданный список
 
 print(user_list)
