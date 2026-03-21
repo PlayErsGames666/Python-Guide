@@ -24,15 +24,15 @@
 #
 #     print(i)
 
-inp = input("Type letter: ")
-found = None
+a = input("Type letter: ")
+found = False
 word = "skill"
 
-for i in word:
-    if i == inp:
-        found = True
-        break
-else:
-    found = False
+# Цикл проверяющий по буквам
+
+for i in word: # word в цикле становиться i
+    if i == a: # если i равна a
+        found = True  # переменная found будет true
+        break # остановка
 
 print(found)
