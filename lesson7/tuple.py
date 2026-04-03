@@ -14,7 +14,7 @@
 
 data = (2, 7, 4, 10, True, -2, 6.5, 'Hello')
 
-for el in data:
+for el in data: # Цикл for будет выводить каждый элемент из списка data через абзац
     print(el)
 
 nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
