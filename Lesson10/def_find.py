@@ -4,13 +4,13 @@ def minimal(l):
         if el < min_num:
             min_num = el
 
-    print(min_num)
+    return min_num
 
 # Всё что выже это упрощение того что имеется
 # Всё что ниже это много строк и мало оптимизации
 
 num1 = [4, 10, 3, -2] # создаём список с числами
-minimal(num1) # Призыв алгоритма minimal для списка num1
+min1 = minimal(num1) # Призыв алгоритма minimal для списка num1
 
 # min = num1[0] # задаём параматеры для min, тоесть теперь он будет 4(так как по индексу там стоит 4)
 #
@@ -23,7 +23,7 @@ minimal(num1) # Призыв алгоритма minimal для списка num1
 # Тот же вариант только с float исчеслением
 
 num2 = [4.3, 10.2, 3.1, -2.0]
-minimal(num2) # Призыв алгоритма minimal для списка num2
+min2 = minimal(num2) # Призыв алгоритма minimal для списка num2
 
 # min2 = num2[0]
 #
@@ -32,3 +32,8 @@ minimal(num2) # Призыв алгоритма minimal для списка num2
 #         min2 = el
 #
 # print(min2)
+
+if min1 < min2:
+    print(min1)
+else:
+    print(min2)
