@@ -13,5 +13,14 @@
 # print(d.datetime.now().time().minute) # Выводит текущее время в минутых
 # print(d.datetime.now().date().month) # Выводит текущую дату в месяцах
 
-import sys, os
+import sys, os, platform
+import random
+import math
+import array
+
+# Все модули представлены в интернете
+
+print(sys.path) # Выводит полный путь к текущему проекту
+print(os.name) # Выводит название операционной системы nt(Windows New Technology), posix(MacOS)
+print(platform.system()) # Выводит название платформы системы
 
