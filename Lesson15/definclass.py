@@ -13,7 +13,14 @@ class Dog: # Открываем класс в который будем впис
         self.colour = colour
         # self нужен чтобы обращаться к class Dog, без него не будет обршения к наружним переменным
 
-dog1 = Dog()
-dog1.set_data("Dusya", 3, "Male", True, "Grey-Black")
+    def get_data(self): # Метод вывода информации
+        print("Dog name: ", self.name, ",", "Age: ", self.age, ",", "Sex: ", self.sex, ",", "Happy: ", self.isHappy, ",", "Colour: ", self.colour)
 
-print(dog1.name)
+dog1 = Dog()
+dog1.set_data("Dusya", 3, "Male", True, "Grey-Black") # Устанавливаем значения для первой собаки
+
+dog2 = Dog()
+dog2.set_data("Jora", 1, "Male", True, "Drak-Blue") # Устанавливаем значения для второй собаки
+
+dog1.get_data() # Вызвает метод print для вывода информации более красиво
+dog2.get_data() # Вызвает метод print для вывода информации более красиво
