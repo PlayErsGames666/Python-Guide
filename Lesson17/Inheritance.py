@@ -13,7 +13,17 @@ class Building: # Создаём класс Building
 class School(Building): # Создаём унаслдованный класс School
     pass
 
+class House(Building): # Создаём унаслдованный класс House
+    pass
+
+class Shop(Building): # Создаём унаслдованный класс Shop
+    pass
+
 school = School(2020, "Tashkent") # Вписываем данные
 school.get_info() # Выводим данные
-house = Building(2010, "Tokyo")
-shop = Building(2026, "Samara")
+
+house = House(2010, "Tokyo")
+house.get_info()
+
+shop = Shop(2026, "Samara")
+shop.get_info()
