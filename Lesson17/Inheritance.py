@@ -1,7 +1,7 @@
 # Inheritance то-есть наследование, В прошлом уроке использовали для class Dog
 class Building: # Создаём класс Building
     year = None # Задаём параметры год и город
-    city = None
+    __city = None # __ это Инкапсуляция или защита данных(в Python так себе реализована, но она есть)
 
     def __init__(self, year, city): # Создаём конструктор который будет запускать данные
         self.year = year
@@ -29,6 +29,7 @@ class Shop(Building): # Создаём унаслдованный класс Sho
 
 school = School(100, 2020, "Tashkent") # Вписываем данные
 school.get_info() # Выводим данные
+print(school.year)
 
 house = House(2010, "Tokyo")
 house.get_info()
