@@ -17,6 +17,10 @@ class School(Building): # Создаём унаслдованный класс S
         super(School, self).__init__(year, city) # Создаём передачу данных, вызывая супер класс или класс родителя. Используя конструктор из класса родителя передаю данные
         self.pupils = pupils
 
+    def get_info(self):
+        super().get_info() # Используя полиморфизм(тоесть обновление или изменения базовых данных), дополнили метод вывода
+        print("Pupils: ", self.pupils) # Выводит и Учеников
+
 class House(Building): # Создаём унаслдованный класс House
     pass
 
