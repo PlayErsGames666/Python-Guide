@@ -1,13 +1,14 @@
 import webbrowser # Импортируем встроенный модуль для использования url
 
-def validator(func):
-    def wrapper(url):
-        print("До запуска")
-        func(url)
-        print("После запуска")
-    return wrapper
+def validator(func): # Создаём дикоратор(чаще всего в нём в писывают func)
+    def wrapper(url): # Создаём wrapper, обёртку с параметром url
+        if "." in url: # Проверка на то, есть ли точка в URL
+            func(url) # Если да, то откроет url
+        else:
+            print("Invalid URL") # Если нет, то выведет это
+    return wrapper # необходимо вернуть фунцию wrapper чтобы он работал
 
-@validator
+@validator # Дикорирум фунцию open_url
 def open_url(url): # создаём функцию которую будем использовать как призыв ссылки
     webbrowser.open(url) # от модуля webbrowser открываем url
 
